@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+  <script>
+    window.onload = function() {
+      // Define the mobile and desktop URLs
+      const mobileURL = "https://yourmobilelink.com";
+      const desktopURL = "https://yourdesktoplink.com";
+
+      // Check if the user is on a mobile device
+      const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+      // Redirect based on the device type
+      if (isMobile) {
+        window.location.href = mobileURL;
+      } else {
+        window.location.href = desktopURL;
+      }
+    };
+  </script>
+</html>
